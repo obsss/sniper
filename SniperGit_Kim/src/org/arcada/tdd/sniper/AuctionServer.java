@@ -57,6 +57,7 @@ public class AuctionServer {
 		return false;
 	}
 	
+	// there is a bug in this method
 	public void makeBid(String name, int amount) throws Exception {
 		for (AuctionItem item : this.items) {
 			if (item.name.equals(name)) {
